@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		<title>2 Column Frames Layout &mdash; Left Menu</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/projects.css">
+	</head>
+	<body>
+		<nav class="main-nav">
+      <a href="index.html">HOME</a>
+      <a href="resume.html" id="bg-nav-lnk">RESUME</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="skills.html">SKILLS</a>
+    </nav>
+		<header>
+			<h1 class="main-header">PROJECTS</h1>
+		</header>
+		<div class="project-desc">
+			<div class="projects">
+				<button class="project-btn btnA">Memo App <span>click for details</span> <p><a href="#">GitHub Source Code</a></p></button>
+				<button class="project-btn btnB">JS Tetris <span>click for details</span><p><a href="#">GitHub Source Code</a></p></button>
+			</div>
+			<div class="projects">
+				<p class="src-code-link"><a href="#">GitHub Source Code</a></p>
+				<p class="src-code-link"><a href="#">GitHub Source Code</a></p>
+			</div>
+			<div class="project-objective">
+				<h2 class="desc-header">OBJECTIVE</h2>
+				<p>Create a Ruby on Rails web application where user's can securely create, store &amp; manage their personal notes (memos) dynamically from a single page by utilizing Ajax and jQuery on the client side.</p>
+			</div>
+			<div class="project-objective">
+				<h2 class="desc-header">OBJECTIVE</h2>
+				<p>Create tetris game using pure JavaScript and HTML5 canvas. Randomly selected shapes should progress "drop" down it's position on the board every second, progessing down to the bottom of the board once game starts. As shape is dropping, player can rotate or move shape, pause game, move shape down the board (overriding the 1 second progression). If combindation of shapes completely fills a row on the board, row is cleared and 10+ points are added to the player's score.</p>
+			</div>
+
+			<div class="project-feat">
+				<h2 class="desc-header">FEATURES</h2>
+				<ul class="feat-list checkmark">
+					<li class="feat-item"><span class="feat-check">&#10003;</span> Game start and pause button controls to begin game or pause in the middle of a game.</li>
+					<li class="feat-item"><span class="feat-check">&#10003;</span>  Randomly selected shapes produced.</li>
+					<li class="feat-item"><span class="feat-check">&#10003;</span> Shape travels down board at 1 second intervals.</li>
+					<li class="feat-item"><span class="feat-check">&#10003;</span> Player can rotate and move shapes left, right &amp; down (expediting regular drop interval).</li>
+					<li class="feat-item"><span class="feat-check">&#10003;</span> Shape pieces are stack on top of each other until limit is reached and game is lost.</li>
+					<li class="feat-item"><span class="feat-check">&#10003;</span> Each time entire row on board is filled by shapes, it is cleared and removed from the board (expanding limit threshold).</li>
+					<li class="feat-item"><span class="feat-check">&#10003;</span> Score is incremented by +10 points each time row is cleared.</li>
+					<li class="feat-item"><span class="feat-check">&#10003;</span> Additional numpad key shortcuts provided.</li>
+				</ul>
+			</div>
+			<div class="project-feat">
+				<h2 class="desc-header">FEATURES</h2>
+				<ul class="feat-list checkmark">
+					<li class="feat-item"><span class="feat-check">&#10003;</span> User account registration form with client side validation error handling and bcrypt enabled password hashing. Modal box form display.</li>
+					<li class="feat-item"><span class="feat-check">&#10003;</span>  User login form with validation errors and back-end authentication. Modal box form display.</li>
+					<li class="feat-item"><span class="feat-check">&#10003;</span> Single home or dashboard view, where all of a user's saved notes are displayed.</li>
+					<li class="feat-item"><span class="feat-check">&#10003;</span> Preform all basic CRUD operations on individual notes without page reload.</li>
+					<li class="feat-item"><span class="feat-check">&#10003;</span> Additionally color coding options for individual notes.</li>
+					<li class="feat-item"><span class="feat-check">&#10003;</span> Provide regular and expanded view options of existing notes for better note editing or reading experience.</li>
+					<li class="feat-item"><span class="feat-check">&#10003;</span> Logout functionality to end session and redirect user back to the app's login page, preventing unauthorized access.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="display-container1 content">
+			<img src="./images/memo-app-1.png" style="width:100%" class="mySlides">
+			<img src="./images/memo-app-2B.png" style="width:100%" class="mySlides">
+			<img src="./images/memo-app-3.png" style="width:100%" class="mySlides">
+			<img src="./images/memo-app-4.png" style="width:100%" class="mySlides">
+			<img src="./images/memo-app-5.png" style="width:100%" class="mySlides">
+			<img src="./images/memo-app-6.png" style="width:100%" class="mySlides">
+			<img src="./images/memo-app-7.png" style="width:100%" class="mySlides">
+			<img src="./images/memo-app-8.png" style="width:100%" class="mySlides">
+			<img src="./images/memo-app-9.png" style="width:100%" class="mySlides">
+			<img src="./images/memo-app-10.png" style="width:100%" class="mySlides">
+			<button class="displayBtn display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="displayBtn display-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>
+		<div class="display-container2 content">
+			<img src="./images/tetris-1.png" style="width:100%" class="mySlides2">
+			<img src="./images/tetris-2.png" style="width:100%" class="mySlides2">
+			<img src="./images/tetris-3.png" style="width:100%" class="mySlides2">
+			<img src="./images/tetris-4.png" style="width:100%" class="mySlides2">
+			<img src="./images/tetris-5.png" style="width:100%" class="mySlides2">
+			<button class="displayBtn display-left" onclick="plusDivs2(-1)">&#10094;</button>
+			<button class="displayBtn display-right" onclick="plusDivs2(1)">&#10095;</button>
+		</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="./js/project.js"></script>
+  <script type="text/javascript">
+    var slideIndex = 1;
+    showDivs(slideIndex);
+		showDivs2(slideIndex);
+
+    function plusDivs(n) {
+      console.log(slideIndex);
+      showDivs(slideIndex += parseInt(n));
+    }
+
+		function plusDivs2(n) {
+      console.log(slideIndex);
+      showDivs2(slideIndex += parseInt(n));
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+      console.log(slideIndex-1);
+    }
+
+		function showDivs2(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides2");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+      console.log(slideIndex-1);
+    }
+  </script>
+	</body>
+</html>
