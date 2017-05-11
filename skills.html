@@ -3,21 +3,24 @@
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
   <title>My Skills</title>
-  <link rel="stylesheet" href="./css/home.css">
+
   <link rel="stylesheet" href="./css/skills.css">
+  <link rel="stylesheet" href="./css/home.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" />
   <link rel="stylesheet" href="./css/normalize.css">
 </head>
   <body>
     <nav class="main-nav">
-      <a href="index.html">HOME</a>
-      <a href="resume.html" id="bg-nav-lnk">RESUME</a>
-      <a href="projects.html">PROJECTS</a>
-      <a href="#">SKILLS</a>
+      <p><a href="index.html">HOME</a></p>
+      <p><a href="resume.html" id="bg-nav-lnk">RESUME</a></p>
+      <p><a href="projects.html">PROJECTS</a></p>
+      <p><a href="skills.html">SKILLS</a></p>
+
     </nav>
     <div class="skills">
       <div class="front">
         <h1 class="header-style">Front-end</h1>
+        <div class="skill-wrap">
           <p class="title">LANGUAGES</p>
           <p>HTML</p>
           <p>CSS</p>
@@ -28,13 +31,16 @@
           <p>CSS Flexbox</p>
           <p>Ajax</p>
           <p>Flexbox Grid</p>
+        </div>
+
+
       </div>
       <div class="back">
         <h1 class="header-style">Back-end</h1>
+        <div class="skill-wrap">
           <p class="title">LANGUAGES</p>
           <p>Ruby</p>
           <p>Python</p>
-          <p>OOP JavaScript</p>
           <p class="title">FRAMEWORKS</p>
           <p>ExpressJS</p>
           <p>NodeJS</p>
@@ -44,12 +50,15 @@
           <p class="title">DATABASES</p>
           <p>MySQL</p>
           <p>MongoDB</p>
+        </div>
       </div>
       <div class="deploy">
         <h1 class="header-style">Deployment</h1>
-          <p>AWS / Amazon EC2</p>
-          <p>Heroku</p>
-          <p>GitHub</p>
+        <ul class='skill-wrap'>
+          <li>AWS / Amazon EC2</li>
+          <li>Heroku</li>
+          <li>GitHub</li>
+        </ul>
       </div>
 
     </div>

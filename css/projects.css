@@ -18,44 +18,44 @@ h1{
 }
 
 @font-face {
-  font-family: 'Abril Fatface';
+  font-family: 'Droid Serif';
   font-style: normal;
   font-weight: 400;
-  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v8/X1g_KwGeBV3ajZIXQ9VnDjxObtw73-qQgbr7Be51v5c.woff2) format('woff2');
+  src: local('Droid Serif'), local('DroidSerif'), url(https://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 @font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url(https://fonts.gstatic.com/s/droidserif/v6/QQt14e8dY39u-eYBZmppwYlIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/*@font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
+}*/
 /********** Layout Rules ************/
 
-.main-nav{
-  width: 80%;
-  padding-top: .7%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  margin: 0 auto;
+.scode-icon{
+  float: left;
+  padding-right: 2%;
 }
 
-.project-btn > p{
-  display: none;
-  outline: 0;
+#sc-link{
+  color: #81FCC3;
+  margin: auto auto 10px auto;
+  font-family: 'Quicksand', sans-serif;
+  width: 35%;
+  display: inline-block;
 }
+
+
 .display-container1,
 .display-container2,
 .display-container1 > button,
@@ -103,11 +103,31 @@ img{
   transform: translate(0%, -50%);
 }
 
+
 .project-btn > span{
   display: inline-block;
-  padding: 10px;
+  padding-top: 16px;
   vertical-align: bottom;
+  margin-bottom: 6%;
 }
+
+.project-btn > h4{
+  margin-top: 2%;
+}
+
+.project-btn > p{
+  padding: 10px;
+  float: left;
+  width: 38%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: auto;
+  /*display: none;*/
+  outline: 0;
+}
+
 
 .projects{
   display: -webkit-box;
@@ -123,6 +143,8 @@ img{
   justify-content: space-around;
 }
 
+/*.scode-icon{ margin-right: -14px;}*/
+
 .projects > .src-code-link{
   -webkit-box-flex: 2;
   -webkit-flex: 2;
@@ -131,9 +153,9 @@ img{
 }
 
 .project-btn{
-  width: 25%;
-  max-height: 120px;
-  padding: 1.8%;
+  width: 26%;
+  /*max-height: 120px;*/
+  padding: 1.5%;
   margin: 0 auto;
   display: block;
 }
@@ -151,73 +173,69 @@ img{
   box-shadow: 0 6px 6px rgba(0,0,0,.4);
 }
 
-.main-nav > a {
-  font-family: 'Raleway', sans-serif;
-  font-size: .95em;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin-right: 2%;
-  margin-left: 2%;
-  border-radius: 4px;
-  padding: 1%;
-  min-height: 22px;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-}
 
 .main-header{
-  font-family:'Abril Fatface', cursive;
+  font-family:'Droid Serif', serif;
   letter-spacing: 1px;
   font-size: 3em;
+  font-weight: 700;
   color: #414141;
   border-bottom: .5px solid #414141;
 }
 
 .project-desc{
-  font-family: 'Raleway', sans-serif;
+  ffont-family: 'Quicksand', sans-serif;
 }
 
 .desc-header{
-  font-size: 2em;
-  font-weight: 300;
+  font-size: 1.9em;
+  font-weight: 500;
+  margin-bottom: 2%;
+
 }
 .project-btn{
-  background-color: #414141;
+  background-color: #0094FF;
   color: white;
   border-style: none;
   font-size: 2.6em;
-  font-family:'Abril Fatface', cursive;
-  font-weight: 300;
+  font-family:'Droid Serif', serif;
   letter-spacing: 1.5px;
   cursor: pointer;
 }
 
 .project-feat,
 .project-objective{
-  color: #606060;
+  color: #414141;
   font-weight: 300;
+}
+
+.project-feat{
+  margin-bottom: 4%;
 }
 
 .project-objective{
   line-height: 1.5em;
+
+}
+
+.project-objective,
+.project-feat{
+  font-size: .8em;
+  margin-top: 3em;
 }
 .project-btn > span{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 14.5px;
 }
 
 .src-code-link{
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .src-code-link > a{
-  color: #2980B9;
+  /*color: #2980B9;*/
+  color: #003154;
   padding: .5%;
 }
 
@@ -244,6 +262,7 @@ img{
 }
 
 /********** State Rules ************/
+
 
 .project-objective,
 .project-feat{
@@ -285,6 +304,13 @@ img{
     width: 80%;
   }
 
+  .main-header{
+    font-size: 1.5em;
+    margin-top: 4%;
+    padding-bottom: 6px;
+    margin-left: 0;
+  }
+
   .projects{
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -298,15 +324,20 @@ img{
 
   }
   .project-btn{
-    font-size: 1.5em;
-    font-family:'Abril Fatface', cursive;
+    font-size: 1.3em;
+    font-family:'Droid Serif', serif;
     font-weight: 300;
     letter-spacing: 1px;
     cursor: pointer;
-    width: 90%;
+    width: 95%;
     margin: 10px;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    margin-top: 18px;
+  }
+
+  .project-btn > h4{
+    margin: 0;
+    padding-top: 5%;
+    font-size: 1.1em;
   }
 
   .src-code-link{
@@ -316,17 +347,30 @@ img{
   }
 
   .project-btn > span{
-    font-size: 12.5px;
+    font-size: 14px;
+    display: block;
+    /*padding-top: 8%;*/
   }
 
   .project-btn > p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 12.8px;
-    margin: 0 auto;
-    display: block;
+    font-size: 12px;
+    width: 40%;
+    display: inline-flex;
+    max-height: 50px;
+    /*height: 35px;*/
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: center;
+
   }
-  .project-btn > p > a{
-    color: lightblue;
+
+  #sc-link > img{
+    width: 20px;
+  }
+
+  #sc-link{
+    width: 100%;
   }
 
   .content{
@@ -336,12 +380,8 @@ img{
   }
   .project-objective,
   .project-feat{
-    font-size: .7em;
-  }
-
-  .project-objective > p,
-  .project-feat > ul > li {
-    font-size: 1.2em;
+    font-size: .75em;
+    margin-top: 10px;
   }
 
   .project-feat > ul{
@@ -350,26 +390,27 @@ img{
     margin: 0 auto;
   }
 
-  .main-header{
-    font-size: 2em;
-  }
-
-  .main-nav{
-    min-height: 8vh;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-    justify-content: center;
-    font-size: .8em;
-  }
 
   .desc-header{
-    font-size: 1.6em;
+    font-size: 1.4em;
+  }
+
+  .content{
+    height: 40vh;
   }
 
   .content > img{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+
   }
 
   .content > button{
@@ -397,14 +438,17 @@ img{
   }
   .project-btn{
     font-size: 2.4em;
-    font-family:'Abril Fatface', cursive;
-    font-weight: 300;
+    font-family:'Droid Serif', serif;
+    font-weight: 700;
     letter-spacing: 1px;
     cursor: pointer;
-    width: 90%;
+    width: 60%;
+    height: 100%;
     margin: 10px;
-    padding-top: 2%;
-    padding-bottom: 2%;
+  }
+
+  .project-btn > h4{
+    margin-top: 10px;
   }
 
   .src-code-link{
@@ -414,28 +458,40 @@ img{
   }
 
   .project-btn > span{
-    font-size: 13px;
+    font-size: 14px;
     display: block;
     margin-bottom: 10px;
   }
 
-  .project-btn > p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    margin: 0 auto;
-    display: block;
-  }
-  .project-btn > p > a{
-    color: lightblue;
+  .project-btn > p{
+    ffont-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    width: 35%;
+    max-height: 50px;
+    height: 35px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
+  #sc-link{
+    font-size: 14px;
+    width: 100%;
+
+  }
+  /*.project-btn > p > a{
+    color: #81FCC3;
+  }*/
+
   .main-header{
-    font-size: 2.8em;
+    font-size: 2.5em;
+    padding-bottom: 1%;
   }
 
   .project-objective,
   .project-feat{
-    font-size: .85em;
+    font-size: .8em;
   }
 
   .project-objective > p,
@@ -457,93 +513,47 @@ img{
     max-height: 70vh;
   }
 
-  .main-nav{
-    min-height: 8vh;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-    justify-content: center;
-    font-size: .9em;
-  }
-
 }
-/*@media only screen and (min-width: 851px) and (max-width: 999px){
-  .project-desc{
-    width: 70%;
-  }
-  .project-btn{
-    font-size: 2em;
-    font-family:'Abril Fatface', cursive;
-    font-weight: 300;
-    letter-spacing: 1px;
-    cursor: pointer;
-    width: 40%;
+
+@media only screen and (min-width: 1281px){
+  .src-code-link{
+    width: 0;
+    height: 0;
+    visibility: hidden;
   }
 
-  .project-btn > span{
-    font-size: 13px;
-  }
-
-  .content{
-    max-width: 95%;
-    margin: 5px auto;
-    height: 64vh;
-  }
-  .project-objective,
-  .project-feat{
-    font-size: .9em;
-  }
 
   .main-header{
-    font-size: 2.2em;
+    padding-bottom: 1%;
+    padding-top: 2.5%;
   }
-
-  .main-nav > a {
-    font-size: .8em;
-    margin-top: 4px;
-  }
-
-}*/
-
-@media only screen and (min-width: 1000px) and (max-width: 1400px){
-
-  .project-btn{
-    font-size: 2em;
-    font-family:'Abril Fatface', cursive;
-    font-weight: 300;
-    letter-spacing: 1px;
-    cursor: pointer;
-    width: 40%;
-  }
-
   .project-btn > span{
-    font-size: 13px;
+    font-size: 16px;
+    display: block;
+    /*margin-bottom: 8%;*/
   }
 
-  .content{
-    max-width: 90%;
-    margin: 5px auto;
+  .project-btn > p{
+    width: 35%;
+    max-height: 50px;
+    height: 35px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
-}
+  #sc-link{
+    font-size: 14px;
+    width: 100%;
 
-@media only screen and (min-width: 1401px) and (max-width: 1768px){
-  .project-btn{
-    font-size: 2em;
-    font-family:'Abril Fatface', cursive;
-    font-weight: 300;
-    letter-spacing: 1px;
-    cursor: pointer;
-    width: 40%;
   }
 
-  .project-btn > span{
-    font-size: 13px;
+  .project-objective,
+  .project-feat{
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
   }
-
-  .content{
-    max-width: 80%;
-    margin: 5px auto;
-  }
-
 }

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.main-nav a').hover(function(){
+  $('.main-nav p').hover(function(){
     $(this).toggleClass('js-hover-nav');
   });
 });

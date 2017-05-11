@@ -3,38 +3,62 @@
 	<head>
 		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 		<title>My Projects</title>
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/projects.css">
 	</head>
 	<body>
 		<nav class="main-nav">
-      <a href="index.html">HOME</a>
-      <a href="resume.html" id="bg-nav-lnk">RESUME</a>
-      <a href="projects.html">PROJECTS</a>
-      <a href="skills.html">SKILLS</a>
+      <p><a href="index.html">HOME</a></p>
+      <p><a href="resume.html" id="bg-nav-lnk">RESUME</a></p>
+      <p><a href="projects.html">PROJECTS</a></p>
+      <p><a href="skills.html">SKILLS</a></p>
+
     </nav>
 		<header>
 			<h1 class="main-header">PROJECTS</h1>
 		</header>
 		<div class="project-desc">
 			<div class="projects">
-				<button class="project-btn btnA">Memo App <span>click for details</span> <p><a href="#">GitHub Source Code</a></p></button>
-				<button class="project-btn btnB">JS Tetris <span>click for details</span><p><a href="#">GitHub Source Code</a></p></button>
+				<button class="project-btn btnA"><h4>Memo App</h4><span id="details1">click for details</span>
+					<p>
+						<a href="https://github.com/susanmash/memo-app" id="sc-link" target="_blank">
+							<img class="scode-icon" src="./images/icon-eye-48.png" width="22px" />
+							code
+						</a>
+					</p>
+				</button>
+				<button class="project-btn btnB"><h4>JS Tetris</h4> <span id="details2">click for details</span>
+					<p>
+						<a href="https://github.com/susanmash/jstetris" id="sc-link" target="_blank">
+							<img class="scode-icon" src="./images/icon-eye-48.png" width="22px" > code
+
+						</a>
+					</p>
+					<p>
+						<a href="https://susanmash.github.io/jstetris/" id="sc-link" target="_blank">
+							<img class="scode-icon" src="./images/icon-play-48.png" width="22px">
+							demo
+						</a>
+					</p>
+				</button>
 			</div>
 			<div class="projects">
-				<p class="src-code-link"><a href="https://github.com/susanmash/memo-app" target="_blank">GitHub Source Code</a></p>
-				<p class="src-code-link"><a href="https://github.com/susanmash/jstetris" target="_blank">GitHub Source Code</a> + <a href="https://susanmash.github.io/jstetris/" target="_blank">Live Demo</a></p>
-			</div>
-			<div class="project-objective">
-				<h2 class="desc-header">OBJECTIVE</h2>
-				<p>Create a Ruby on Rails web application where user's can securely create, store &amp; manage their personal notes (memos) dynamically from a single page by utilizing Ajax and jQuery on the client side.</p>
-			</div>
-			<div class="project-objective">
-				<h2 class="desc-header">OBJECTIVE</h2>
-				<p>Create tetris game using pure JavaScript and HTML5 canvas. Each new random piece/shape is created one at a time and travel down the board in intervals of 1 second. As shape is drops, player can rotate or move shape, pause the game, drop shape (overriding the 1 second interval). If a row on the board is completely filled, row is cleared &amp; removed from the board and 10+ points are added to the player's score.</p>
+				<!-- <p class="src-code-link"><a href="https://github.com/susanmash/memo-app" target="_blank"> <img src="icon-eye-48.png" /> GitHub Source Code</a></p>
+				<p class="src-code-link"><a href="https://github.com/susanmash/jstetris" target="_blank">GitHub Source Code</a> + <a href="https://susanmash.github.io/jstetris/" target="_blank">Live Demo</a></p> -->
 			</div>
 
-			<div class="project-feat">
+			<div class="project-objective project2">
+				<h2 class="desc-header">OBJECTIVE</h2>
+				<p>Created tetris game using functional JavaScript and HTML5 canvas. New pieces are randomly generated from existing collection of classic tetris shapes and travel down the board in intervals of 1 second. Player can expedite the drop intervals, rotate and move active pieces while in play. Game controls allow player to pause and start an existing game. If a row on the board is completely filled, row is cleared &amp; and 10+ points are added to the player's score. Live demo available to play!</p>
+			</div>
+			<div class="project-objective project1">
+				<h2 class="desc-header">OBJECTIVE</h2>
+				<p>Created a Ruby on Rails web application where user's can securely create, store &amp; manage their personal notes (memos) dynamically from a single page by utilizing Ajax and jQuery on the client side.</p>
+			</div>
+
+			<div class="project-feat project2">
 				<h2 class="desc-header">FEATURES</h2>
 				<ul class="feat-list checkmark">
 					<li class="feat-item"><span class="feat-check">&#10003;</span> Game start and pause button controls to begin game or pause in the middle of a game.</li>
@@ -47,7 +71,7 @@
 					<li class="feat-item"><span class="feat-check">&#10003;</span> Additional numpad key shortcuts provided.</li>
 				</ul>
 			</div>
-			<div class="project-feat">
+			<div class="project-feat project1">
 				<h2 class="desc-header">FEATURES</h2>
 				<ul class="feat-list checkmark">
 					<li class="feat-item"><span class="feat-check">&#10003;</span> User account registration form with client side validation error handling and bcrypt enabled password hashing. Modal box form display.</li>
@@ -75,11 +99,11 @@
 			<button class="displayBtn display-right" onclick="plusDivs(1)">&#10095;</button>
 		</div>
 		<div class="display-container2 content">
-			<img src="./images/tetris-1.png" style="width:100%" class="mySlides2">
-			<img src="./images/tetris-2.png" style="width:100%" class="mySlides2">
-			<img src="./images/tetris-3.png" style="width:100%" class="mySlides2">
-			<img src="./images/tetris-4.png" style="width:100%" class="mySlides2">
-			<img src="./images/tetris-5.png" style="width:100%" class="mySlides2">
+			<img src="./images/tetris-1A.png" style="width:100%" class="mySlides2">
+			<img src="./images/tetris-2A.png" style="width:100%" class="mySlides2">
+			<img src="./images/tetris-3A.png" style="width:100%" class="mySlides2">
+			<img src="./images/tetris-5A.png" style="width:100%" class="mySlides2">
+			<img src="./images/tetris-4A.png" style="width:100%" class="mySlides2">
 			<button class="displayBtn display-left" onclick="plusDivs2(-1)">&#10094;</button>
 			<button class="displayBtn display-right" onclick="plusDivs2(1)">&#10095;</button>
 		</div>
